@@ -45,8 +45,6 @@ case "$soc_id" in
         "355" | "369" | "377" | "380" | "384" )
 
     # Setting b.L scheduler parameters
-    echo 25 > /proc/sys/kernel/sched_downmigrate_boosted
-    echo 25 > /proc/sys/kernel/sched_upmigrate_boosted
     echo 85 > /proc/sys/kernel/sched_downmigrate
     echo 95 > /proc/sys/kernel/sched_upmigrate
 
@@ -146,8 +144,6 @@ case "$soc_id" in
     "365" | "366" )
 
     # Setting b.L scheduler parameters
-    echo 25 > /proc/sys/kernel/sched_downmigrate_boosted
-    echo 25 > /proc/sys/kernel/sched_upmigrate_boosted
     echo 85 > /proc/sys/kernel/sched_downmigrate
     echo 95 > /proc/sys/kernel/sched_upmigrate
 

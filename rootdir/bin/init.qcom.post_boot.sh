@@ -63,9 +63,6 @@ case "$soc_id" in
     echo 1 > /dev/stune/top-app/schedtune.boost
     echo 1 > /dev/stune/top-app/schedtune.prefer_idle
 
-    # Set Memory parameters
-    configure_memory_parameters
-
     # Enable bus-dcvs
     for device in /sys/devices/platform/soc
     do

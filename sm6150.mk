@@ -151,7 +151,6 @@ PRODUCT_PACKAGES += \
     libgnss
 
 PRODUCT_PACKAGES += \
-    apdr.conf \
     flp.conf \
     gnss_antenna_info.conf \
     gps.conf \

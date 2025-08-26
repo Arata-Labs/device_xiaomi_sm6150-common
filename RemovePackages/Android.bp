@@ -1,6 +1,6 @@
 prebuilt_etc {
     name: "RemovePackages",
-    src: "/dev/null",
+    src: "dummy",
     filename: "RemovePackages",
     installable: false,
     overrides: [

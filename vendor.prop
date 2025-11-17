@@ -183,6 +183,9 @@ persist.sys.sf.color_mode=9
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
+# GFX
+ro.config.avoid_gfx_accel=false
+
 # HWUI
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30

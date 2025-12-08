@@ -40,6 +40,7 @@ soong_config_string_variable {
 prebuilt_etc {
     name: "fstab.default",
     src: "etc/fstab.default",
+    filename: "fstab.qcom",
     vendor: true,
     ramdisk_available: true,
 }

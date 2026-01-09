@@ -81,6 +81,10 @@ on post-fs-data
     # Disable WiFi Aware feature.
     mount none /dev/null /vendor/etc/permissions/android.hardware.wifi.aware.xml bind
 
+    # Dolby
+    mkdir /data/vendor/dolby 0770 media media
+    mkdir /data/vendor/multimedia 0775 system system
+
 on boot
     start rmt_storage
     start rfs_access

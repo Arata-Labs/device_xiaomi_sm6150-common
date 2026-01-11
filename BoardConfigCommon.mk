@@ -170,7 +170,11 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # Releasetools
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_xiaomi
-TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
+ifeq ($(TARGET_DEVICE),surya)
+    TARGET_RELEASETOOLS_EXTENSIONS := device/xiaomi/surya
+else
+    TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
+endif
 
 # Sepolicy
 TARGET_SEPOLICY_DIR := msmsteppe
